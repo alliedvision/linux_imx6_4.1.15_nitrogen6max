@@ -1,0 +1,79 @@
+===========================================================================
+
+ Allied Vision MIPI CSI-2 Driver for i.MX6 - Release Notes
+
+  Version: 1.0.0
+  Date:    June 2019
+===========================================================================
+
+--------------------------------
+Components and version reference
+--------------------------------
+
+Allied Vision MIPI CSI-2 Driver for i.MX6 v1.0.0
+
+---------------------
+Supported hardware and kernel versions
+---------------------
+Camera:
+  Alvium cameras with CSI-2 interface
+
+ARM boards:
+  Nitrogen6_MAX, Linux kernel 4.1.15
+    OS (without Allied Vision driver):
+      https://github.com/boundarydevices/linux-imx6/tree/boundary-imx_4.1.15_2.0.0_ga
+      Initial commit: 719fb24c9923e424d25d1828cdd0c86f11ccb147
+      https://github.com/boundarydevices/linux-imx6/commit/719fb24c9923e424d25d1828cdd0c86f11ccb147
+    Allied Vision kernel driver module:
+      Precompiled: https://www.alliedvision.com/en/products/software/embedded-software-and-drivers.html
+      Sources: https://github.com/alliedvision/imx6_4.1.15_nitrogen
+
+  Wandboard, Linux kernel 4.1.15
+    OS (without Allied Vision driver):
+      https://github.com/wandboard-org/linux/tree/wandboard_imx_4.1.15_1.1.0_ga
+      Initial commit used : d220b8b1bcac2b0a848db0bd200886419753a83c
+      https://github.com/wandboard-org/linux/commit/d220b8b1bcac2b0a848db0bd200886419753a83c
+    Allied Vision kernel driver module:
+      Precompiled: https://www.alliedvision.com/en/products/software/embedded-software-and-drivers.html
+      Sources: https://github.com/alliedvision/imx6_4.1.15_wandboard
+
+------------
+Installation
+------------
+Download the precompiled kernel or an SD card image and instructions from our website:
+https://www.alliedvision.com/en/products/software/embedded-software-and-drivers.html
+
+Alternatively, use the sources of our kernel driver module.
+To install the sources, use the links listed above and follow these steps:
+
+On your Linux PC
+    1. Go to our GitHub repository and download the kernel driver module sources and our setup, build, and deploy scripts.
+    2. Run setup.sh, which installs tools for building the kernel and preparing the environment.
+    3. Run build.sh, which builds the Linux kernel including our driver.
+       We have tested this script with Ubuntu 16.04 and Ubuntu 18.04. The script creates several files.
+    4. Run deploy.sh, which collects these files and puts them into AlliedVision*.tar.gz, which is the deliverable.
+       
+On your ARM board
+    1. Install the supported operating system of the ARM board provided by the board manufacturer. 
+       Follow the instructions of the board manufacturer. 
+    2. Copy the AlliedVision*.tar.gz archive to the SD card of your ARM board.
+    3. Unpack the AlliedVision*tar.gz file, which contains install.sh.
+    4. Run install.sh and follow its instructions.
+
+For more detailed and additional information on setting up your board, go to: 
+https://www.alliedvision.com/en/products/software/embedded-software-and-drivers.html
+
+---------------------------
+Changes and release history
+---------------------------
+v1.0.0
+Initial release
+
+----------------------------------------
+Contacting Allied Vision
+----------------------------------------
+GitHub:
+https://github.com/alliedvision
+
+Contact us:
+https://www.alliedvision.com/contact
