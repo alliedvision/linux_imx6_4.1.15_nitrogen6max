@@ -11,4 +11,4 @@ If you prefer using the sources: To simplify the installation and avoid malfunct
 
 To set up your board and optimize settings, read: https://cdn.alliedvision.com/fileadmin/content/documents/products/software/software/embedded/iMX6-boards-setup_AlviumCSI2.pdf
 
-To assemble the hardware and operate the camera, download instructions at: https://www.alliedvision.com/en/support/technical-documentation/alvium-documentation.html
+To assemble the hardware and operate the camera, download instructions at: https://www.alliedvision.com/en/support/technical-documentation/alvium-csi-2-documentation.html
