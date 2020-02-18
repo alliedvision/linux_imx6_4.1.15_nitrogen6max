@@ -1,5 +1,6 @@
 # imx6_4.1.15_nitrogen
 Driver for Allied Vision Alvium cameras with MIPI CSI-2 interface.
+![Alvium camera](https://cdn.alliedvision.com/fileadmin/content/images/cameras/Alvium/various/alvium-cameras-models.png)
 
 Supported boards: Nitrogen6_MAX with i.MX6QP, Linux kernel version 4.1.15
 * Nit6QP_MAX
